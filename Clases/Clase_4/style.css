@@ -1,0 +1,49 @@
+body {
+    background: blueviolet;
+}
+
+h1 {
+    font-size: 100px;
+    color: lightcoral;
+    background-color: lightgrey;
+    text-align: center;
+}
+.tardis {
+    font-size: 40px;
+    background-color: lightseagreen;
+    color: lime;
+    text-align: center;
+}
+.doctores {
+    font-size: 30px;
+    color:steelblue;
+    background-color: rgb(119, 42, 42);
+    border: 5px;
+    border-radius: 50%;
+    text-align: center;
+}
+.tomate {
+    color: white;
+    background-color: tomato;
+}
+.naranja {
+    background-color: orange;
+    color: white;
+}
+.azularcoiris {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.verde {
+    background-color: mediumseagreen;
+    color: white;
+}
+.gris
+{background-color: gray;}
+.azulmetalico {
+    background-color: slateblue;
+}
+.dorado {
+    background-color: gold;
+}

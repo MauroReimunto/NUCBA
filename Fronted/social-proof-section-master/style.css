@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&family=Spartan:wght@400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+
+    /* primary */
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    /* neutral */
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+aside {
+    width: 500px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto ;
+    grid-gap: 10px;
+}
+
+
+.aside-1 {
+    grid-row: 1;
+    grid-column: 1/8;
+}
+
+.aside-2 {
+    grid-row: 2;
+    grid-column: 2/9;
+}
+
+.aside-3 {
+    grid-row: 3;
+    grid-column: 3/11;
+}
+
+.aside-box {
+    background: var(--Light-Grayish-Magenta);
+    border-radius: 10px;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    
+}
+.star-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-evenly;
+}
+
+body {
+    margin: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(./images/bg-pattern-top-desktop.svg) no-repeat, url(./images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.star-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-container{
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section-cards {
+    display: flex;
+}
+
+[class*="col-"] {
+	width: 100%
+}
+
+@media only screen and (min-width: 768px) {
+    /* Para escritorio */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
