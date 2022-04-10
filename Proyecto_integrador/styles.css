@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0em;
+    margin: 0em;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --platinum: hsla(60, 10%, 80%, 1);
+    --pale-silver: hsla(30, 20%, 80%, 1);
+    --linen: hsla(31, 51%, 92%, 1);
+    --almond: hsla(26, 31%, 84%, 1);
+    --pale-silver-d: hsla(22, 31%, 76%, 1);
+    --violeta: #372215;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+    height: 40px;
+}
+    .nav-logo {
+        height: 60px;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        list-style: none;
+    }
+
+        li {
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+            li a {
+                text-decoration: none;
+                color: black;
+            }
+
+    .login {
+        width: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;
+        color: black;
+    }
+
+        .login img {
+            height: 20px;
+        }
+
+        .login p {
+            letter-spacing: 1px;
+        }
+
+
+
