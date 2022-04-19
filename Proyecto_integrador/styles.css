@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     padding: 0em;
     margin: 0em;
@@ -8,69 +9,171 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --platinum: hsla(60, 10%, 80%, 1);
+    --platinum: rgb(172, 172, 152);
     --pale-silver: hsla(30, 20%, 80%, 1);
-    --linen: hsla(31, 51%, 92%, 1);
-    --almond: hsla(26, 31%, 84%, 1);
+    --linen: rgba(227, 227, 227, 0.605);
+    --almond: rgb(221, 166, 166);
     --pale-silver-d: hsla(22, 31%, 76%, 1);
-    --violeta: #372215;
+    --violeta: #ff0000;
 }
 
 body {
     display: flex;
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
+    background-color: var(--linen)
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 20px 0 20px;
+    padding: 0 20px 0 20px;
     font-weight: 500;
-    font-size: 16px;
-    height: 40px;
+    height: 9vw;
+    max-height: 25px;
+    background-color: white;
+    border-bottom: solid var(--platinum) 0.1px;
 }
-    .nav-logo {
-        height: 60px;
+
+.nav-logo {
+    height: 8vw;
+    max-height: 45px;
+}
+
+nav ul {
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 250px;
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.login {
+    width: 9vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: space-evenly;
+    border: 0.8px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.login img {
+    height: 1.8vw;
+    align-self: center;
+}
+
+.login p {
+    align-self: center;
+    color: black;
+    font-size: 1vw;
+    letter-spacing: 1px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    align-self: center;
+    ;
+}
+
+    .tittle {
+        margin-top: 1vw;
+        background-position: center;
+        background-image: url(./img/230666806_886683448612483_6335207237350337523_n.jpg);
+        background-size: 80vw;
+        height: auto;
+        padding: 4vw;
+        text-align: center;
     }
 
-    nav ul{
+
+        h1 {
+            letter-spacing: 5px;
+            background-size: 550px;
+            color: white;
+        }
+
+        .subtittle {
+            font-size: 2vw;
+            font-weight: 300;
+            color: white;
+        }
+
+    .container {
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+        margin-top: 2vw;
+    }
+
+    .works {
         display: flex;
-        justify-content: space-between;
-        width: 50%;
-        list-style: none;
+        flex-direction: column;
+        width: 90%;
     }
 
-        li {
-            text-decoration: none;
-            letter-spacing: 2px;
+        .works a {
+            color: black;
+            font-size: 2vw;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            text-align: center;
         }
 
-            li a {
-                text-decoration: none;
-                color: black;
-            }
-
-    .login {
-        width: 120px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 5px;
-        text-decoration: none;
-        color: black;
-    }
-
-        .login img {
-            height: 20px;
+        .works h2 {
+            font-size: 2vw;
+            border-bottom: 4px double var(--almond);
+            border-top: 4px double var(--almond);
+            font-weight: 500;
+            padding-top: 0.5vw;
+            padding-bottom: 0.5vw;
         }
 
-        .login p {
-            letter-spacing: 1px;
+        .img-container {
+            margin-top: 2vw;
+            display: flex;
+            justify-content:space-between ;
         }
 
+        .info {
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            width: 30%;
+            height: auto;
+            overflow: hidden;
+            padding: 2vw;
+        }
 
+        .info h3 {
+            font-size: 2vw;
+            margin-top: 2vw;
+            font-weight: 500;
+        }
 
+        .info h4 {
+            font-size: 1.2vw;
+            margin-top: 2vw;
+            font-weight: 200;
+        }
+
+        .img-c {
+            height: 22vw;
+            border-radius: 1px;
+        }
