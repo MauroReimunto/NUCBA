@@ -1,0 +1,39 @@
+*,
+  *::after,
+  *::before {
+      margin:0;
+      padding-left: 0px;
+  }
+.numeros1 li{
+list-style-type: decimal;
+}
+.numeros1 {
+    padding-left: 55px;
+}
+
+.numeros2 {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.circ li{
+    list-style-type: circle;
+    margin-left: 35px;
+}
+ .puntos {
+     list-style: disc;
+     padding-left: 35px;
+ }
+.nada li {
+    list-style:none;
+}
+.nada p {
+    padding-left: 35px;
+    
+}
+.nada h5 {
+    font-weight: 500 ;
+}
+
+
+
